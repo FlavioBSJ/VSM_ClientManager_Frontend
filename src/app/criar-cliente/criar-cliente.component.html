@@ -1,0 +1,64 @@
+<h3 class="text-center">Criar/Editar Cliente</h3>
+<div class="container">
+  <form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+      <label>Id (Informar em caso de edição)</label>
+      <input type="text" class="form-control" id="id"
+        [(ngModel)] = "cliente.id" name = "id">
+    </div>
+    <div class="form-group">
+      <label>Nome</label>
+      <input type="text" class="form-control" id="nome"
+        [(ngModel)] = "cliente.nome" name = "nome">
+    </div>
+    <div class="form-group">
+      <label>CPF</label>
+      <input type="text" class="form-control" id="cpf"
+        [(ngModel)] = "cliente.cpf" name = "cpf">
+    </div>
+    <div class="form-group">
+      <label>E-Mail</label>
+      <input type="text" class="form-control" id="email"
+        [(ngModel)] = "cliente.email" name = "email">
+    </div>
+    <div class="form-group">
+      <label>Telefone</label>
+      <input type="text" class="form-control" id="telefone"
+        [(ngModel)] = "cliente.telefone" name = "telefone">
+    </div>
+    <div class="form-group">
+      <label>Rua</label>
+      <input type="text" class="form-control" id="rua"
+        [(ngModel)] = "cliente.endereco.rua" name = "rua">
+    </div>
+    <div class="form-group">
+      <label>Numero</label>
+      <input type="text" class="form-control" id="numero"
+        [(ngModel)] = "cliente.endereco.numero" name = "numero">
+    </div>    
+    <div class="form-group">
+      <label>Bairro</label>
+      <input type="text" class="form-control" id="bairro"
+        [(ngModel)] = "cliente.endereco.bairro" name = "bairro">
+    </div>
+    <div class="form-group">
+      <label>CEP</label>
+      <input type="text" class="form-control" id="cep"
+        [(ngModel)] = "cliente.endereco.cep" name = "cep">
+    </div>
+    <div class="form-group">
+      <label>Cidade</label>
+      <input type="text" class="form-control" id="cidade"
+        [(ngModel)] = "cliente.endereco.cidade.nomeCidade" name = "cidade">
+    </div>
+    <div class="form-group">
+      <label>UF</label>
+      <input type="text" class="form-control" id="uf"
+        [(ngModel)] = "cliente.endereco.cidade.uf" name = "uf">
+    </div>
+    <button class="btn btn-success" type="submit">Criar</button>
+  </form>
+
+
+</div>
+
